@@ -8,6 +8,7 @@ local uis = game:GetService("UserInputService")
 
 -- Vars
 
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 local mouse = players.LocalPlayer:GetMouse()
 local viewport = workspace.CurrentCamera.ViewportSize
 local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
@@ -113,6 +114,7 @@ function Library:DraggingEnabled(frame, parent)
 			parent.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
 		end
 	end)
+	
 end
 
 
@@ -264,6 +266,15 @@ function Library:Init(options)
 				end
 			end
 		end)
+		
+		
+		uis.InputBegan:Connect(function(input, gpe)
+			if gpe then return end
+			if input.KeyCode == Enum.KeyCode.RightShift then
+				Library:ToggleUI()
+			end
+		end)
+		
 	end
 	
 	-- Navigation
@@ -1233,4 +1244,5 @@ function Library:Init(options)
 	return GUI
 end
 
+print("Zelt was here")
 return Library
