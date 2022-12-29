@@ -1234,4 +1234,3 @@ function Library:Init(options)
 end
 
 return Library
-print("Zelt was here")
