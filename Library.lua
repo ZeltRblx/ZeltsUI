@@ -865,7 +865,7 @@ function Library:Init(options)
 				Slider["30"]["BackgroundColor3"] = Color3.fromRGB(52, 52, 52);
 				Slider["30"]["BorderColor3"] = Color3.fromRGB(52,52,52)
 				Slider["30"]["AnchorPoint"] = Vector2.new(0, 1);
-				Slider["30"]["Size"] = UDim2.new(1, 0, 0, 5);
+				Slider["30"]["Size"] = UDim2.new(1, 0, 0, 8);
 				Slider["30"]["Position"] = UDim2.new(0, 0, 1, 0);
 				Slider["30"]["Name"] = [[SliderBack]];
 
