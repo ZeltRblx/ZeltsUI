@@ -12,7 +12,7 @@ local mouse = players.LocalPlayer:GetMouse()
 local viewport = workspace.CurrentCamera.ViewportSize
 local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
 
--- local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
+local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 
 local LibName = tostring(math.random(10000, 100000)..math.random(10000, 100000))
 
