@@ -28,7 +28,7 @@ local Label = Tab:Label({
 local Toggle = Tab:Toggle({
     Text = "Toggle",
     callback = function(v)
-        print("Toggle state changed to: "..v)
+        print("Toggle state changed to: "..tostring(v))
     end
 })
 
