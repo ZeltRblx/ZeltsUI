@@ -17,7 +17,7 @@ local Tab = Window:CreateTab({
     Icon = "rbxassetid://11952806790"
 })
 
-local SecondTab = Window:CreateTab{(
+local SecondTab = Window:CreateTab({
     Name = "Secondary",
     Icon = "rbxassetid://11961977932"
 })
