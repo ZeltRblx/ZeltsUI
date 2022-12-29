@@ -140,7 +140,7 @@ function Library:Init(options)
 		GUI["2"] = Instance.new("Frame", GUI["1"]);
 		GUI["2"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
 		GUI["2"]["AnchorPoint"] = Vector2.new(0, 0);
-		GUI["2"]["Size"] = UDim2.new(0, 465, 0, 450);
+		GUI["2"]["Size"] = UDim2.new(0, 500, 0, 355);
 		GUI["2"]["Position"] = UDim2.fromOffset((viewport.X / 2) - (GUI["2"].Size.X.Offset / 2), (viewport.Y / 2) - (GUI["2"].Size.Y.Offset / 2))
 		GUI["2"]["Name"] = [[Main]];
 
@@ -1234,3 +1234,4 @@ function Library:Init(options)
 end
 
 return Library
+print("Zelt was here")
