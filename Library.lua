@@ -134,7 +134,7 @@ function Library:Init(options)
 		GUI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Global;
 		GUI["1"]["IgnoreGuiInset"] = true;
 		
-		-- ProtectGui(GUI["1"])
+		ProtectGui(GUI["1"])
 		
 
 		GUI["2"] = Instance.new("Frame", GUI["1"]);
