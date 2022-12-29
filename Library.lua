@@ -131,7 +131,7 @@ function Library:Init(options)
 	
 	-- Main Frame
 	do
-		GUI["1"] = Instance.new("ScreenGui", runService:IsStudio() and players.LocalPlayer:WaitForChild("PlayerGui") or coreGui);
+		GUI["1"] = Instance.new("ScreenGui", coreGui);
 		GUI["1"]["Name"] = LibName;
 		GUI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Global;
 		GUI["1"]["IgnoreGuiInset"] = true;
