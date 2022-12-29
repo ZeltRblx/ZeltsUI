@@ -9,7 +9,7 @@ local Tab = Window:CreateTab({
     Icon = "rbxassetid://11952806790"
 })
 
-local SecondTab = Window:CreateTab{(
+local SecondTab = Window:CreateTab({
     Name = "Secondary",
     Icon = "rbxassetid://11961977932"
 })
@@ -30,11 +30,11 @@ local Toggle = Tab:Toggle({
     callback = function(v)
         print("Toggle state changed to: "..v)
     end
-)}
+})
 
 local Slider = Tab:Slider({
     Text = "Slider",
-    Default = 50
+    Default = 50,
     Min = 1,
     Max = 100,
     Rounding = 1, -- How many numbers after the comma. If the rounding is 0 the number will be a whole number (example: 10, 20). If the rounding is 1 the number will be 10.1, if the rounding is 2 the number will be 10.12 and so on.
