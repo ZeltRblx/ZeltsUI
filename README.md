@@ -6,7 +6,7 @@ Have fun
 Example like in the file above:
 <br>
 ```lua
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeltRblx/ZeltsUI/main/Library.lua'))()
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeltRblx/ZeltsUI/main/Library.lua'), true)()
 
 local Window = Library:Init({
     Name = "<font color='rgb(125, 93, 255)'>Zelt's</font> UI" -- Rich Text can be used.
