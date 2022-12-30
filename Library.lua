@@ -1,12 +1,8 @@
--- Services
-
 local players = game:GetService("Players")
 local tweenService = game:GetService("TweenService")
 local runService = game:GetService("RunService")
 local coreGui = game:GetService("CoreGui")
 local uis = game:GetService("UserInputService")
-
--- Vars
 
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 local mouse = players.LocalPlayer:GetMouse()
